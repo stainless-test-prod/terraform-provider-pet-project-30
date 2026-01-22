@@ -1,7 +1,7 @@
 # Pet Project 30 Terraform Provider
 
 The [Pet Project 30 Terraform provider](https://registry.terraform.io/providers/miriambudayr/pet-project-30/latest/docs) provides convenient access to
-the [Pet Project 30 REST API](https://swagger.ioooooooooo) from Terraform.
+the [Pet Project 30 REST API](https://swagger.iooooooo) from Terraform.
 
 It is generated with [Stainless](https://www.stainless.com/).
 
