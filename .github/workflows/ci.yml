@@ -14,7 +14,7 @@ on:
 
 jobs:
   lint:
-    runs-on: ${{ github.repository == 'stainless-sdks-staging/pet-project-30-terraform' && 'depot-ubuntu-24.04' || 'ubuntu-latest' }}
+    runs-on: ${{ github.repository == '[object Object]' && 'depot-ubuntu-24.04' || 'ubuntu-latest' }}
     if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     steps:
       - uses: actions/checkout@v6
@@ -31,7 +31,7 @@ jobs:
         run: ./scripts/lint
 
   test:
-    runs-on: ${{ github.repository == 'stainless-sdks-staging/pet-project-30-terraform' && 'depot-ubuntu-24.04' || 'ubuntu-latest' }}
+    runs-on: ${{ github.repository == '[object Object]' && 'depot-ubuntu-24.04' || 'ubuntu-latest' }}
     if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     steps:
       - uses: actions/checkout@v6
